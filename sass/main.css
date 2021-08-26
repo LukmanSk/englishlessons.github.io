@@ -98,7 +98,7 @@ header nav .hamburger .line {
 .container {
   background: #1ca9db;
   padding: 2rem;
-  font-size: clamp(0.9rem, 1.2vw, 1.3rem);
+  font-size: .87rem;
 }
 
 .container h1 {
@@ -113,12 +113,12 @@ header nav .hamburger .line {
   display: grid;
   -ms-grid-columns: (minmax(20em, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-  gap: 2em;
   padding: 2rem 0;
 }
 
 .container .grid-container .card {
-  padding: 2rem;
+  margin-bottom: 1.5em;
+  padding: 2.5rem;
   background: white;
 }
 
@@ -129,23 +129,47 @@ header nav .hamburger .line {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1em;
+}
+
+.container .grid-container .card-heading img {
+  width: 4em;
+  margin-left: -.3em;
 }
 
 .container .grid-container .card-heading h4 {
   font-size: 1.5em;
   color: #1ca9db;
   margin: 1rem 0;
+  margin-left: 1em;
 }
 
 .container .grid-container .card p {
   margin-top: 1rem;
   line-height: 1.6;
+  font-size: 1em;
 }
 
 @media (min-width: 60em) {
   .container {
     padding: 2rem 4rem;
+    font-size: 1.2vw;
+  }
+  .container .grid-container .card {
+    margin-top: 1.5em;
+    margin-right: 1.5em;
+  }
+}
+
+@media (min-width: 608px) {
+  .container .grid-container .card {
+    margin-top: 1.5em;
+    margin-right: 1.5em;
+  }
+}
+
+@media (min-width: 100rem) {
+  .container {
+    font-size: 1.5rem;
   }
 }
 
